@@ -113,11 +113,50 @@ const Skill = () => {
           endpoints, verify responses, and ensure the API meets its
           specifications.
         </p>
-        <div className="flex gap-x-5">
+        <div className="flex gap-x-5 mt-5">
           <p className="mt-5 font-extrabold">Technologies used :</p>
           <Image src={"/jest.jpg"} alt={"jest"} width={70} height={70} />
-          <Image src={"/supertest.png"} alt={"supertest"} width={100} height={20} />
+          <Image
+            src={"/supertest.png"}
+            alt={"supertest"}
+            width={100}
+            height={20}
+          />
         </div>
+      </div>
+      <h1 className="text-2xl font-[1000] mt-5">MicroService Architecture: </h1>
+      <div className="pt-5">
+        designing and implementing microservices architectures that enhance
+        scalability, flexibility, and maintainability. I focus on decomposing
+        applications into small, loosely coupled services that can be developed,
+        deployed, and scaled independently.
+      </div>
+      <div className="flex gap-x-5 mt-5">
+        <p className="mt-5 font-extrabold">Some technologies used :</p>
+        <Image src={"/docker.png"} alt={"docker"} width={70} height={70} />
+        <Image src={"/rabbitmq.jpg"} alt={"rabbitmq"} width={100} height={20} />
+      </div>
+      <h1 className="text-2xl font-[1000] mt-5">Monorepo Architecture: </h1>
+      <div className="pt-5">
+        Experience in managing and developing projects within a monorepo
+        structure, where multiple projects or services are stored in a single
+        repository. This approach simplifies dependency management and promotes
+        consistency across projects.
+      </div>
+      <h1 className="text-2xl font-[1000] mt-5">Monorepo Architecture: </h1>
+      <div className="pt-5">
+        Experience in managing and developing projects within a monorepo
+        structure, where multiple projects or services are stored in a single
+        repository. This approach simplifies dependency management and promotes
+        consistency across projects.
+      </div>
+      <div className="flex  mt-5 items-center gap-x-5">
+        <h1 className="text-2xl font-[1000]">Additional Skill: </h1>
+        <Image src={"/GitHub.png"} alt={"github"} width={90} height={90} ></Image>
+        <Image src={"/swagger.jpg"} alt={"swagger"} width={90} height={90} ></Image>
+        <Image src={"/atomicdesign.jpg"} alt={"Atomicdesign"} width={90} height={90} ></Image>
+        <Image src={"/postman.jpg"} alt={"Postman"} width={90} height={90} ></Image>
+        <Image src={"/trello.png"} alt={"Trello"} width={90} height={90} ></Image>
       </div>
     </div>
   );
