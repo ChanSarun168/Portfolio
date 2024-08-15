@@ -42,20 +42,20 @@ export default function Home() {
           </h1>
           <div className="w-full h-[440px] border-t-4 border-violet-300 pt-5">
             <p className="first-line:pl-5">
-              Hello! I&apos;m Chan Sarun, a third-year student majoring in
+              Hello! I&apos;m Chan Sarun a third-year student majoring in
               Computer Science at Royal University of Phnom Penh. I have a deep
-              passion for web development, with skills and interests in both
+              passion for web development with skills and interests in both
               frontend and backend technologies.
             </p>
             <p className="mt-5">
-              Throughout my studies, I&apos;ve built a solid foundation in HTML,
-              CSS, and JavaScript for frontend development, as well as Node.js
+              Throughout my studies I&apos;ve built a solid foundation in HTML 
+              CSS and JavaScript for frontend development as well as Node.js
               and databases for backend development. I enjoy creating dynamic
               and responsive web applications that provide excellent user
               experiences and robust functionality.
             </p>
             <p className="mt-5">
-              In addition to my coursework, I&apos;ve worked on several personal
+              In addition to my coursework I&apos;ve worked on several personal
               and academic projects that have allowed me to apply my skills in
               real-world scenarios. These projects have helped me develop my
               problem-solving abilities and gain practical knowledge in both
@@ -64,12 +64,12 @@ export default function Home() {
             <p className="mt-5">
               I am actively seeking internship opportunities where I can
               contribute my skills and grow as a developer. I am a quick
-              learner, a team player, and passionate about continuous learning
+              learner a team player and passionate about continuous learning
               and improvement.
             </p>
             <p className="mt-5">
-              When I&apos;m not coding, I enjoy exploring new technologies,
-              reading tech blogs, and spending time outdoors. I&apos;m excited
+              When I&apos;m not coding I enjoy exploring new technologies
+              reading tech blogs and spending time outdoors. I&apos;m excited
               to connect with industry professionals and learn from their
               experiences.
             </p>
