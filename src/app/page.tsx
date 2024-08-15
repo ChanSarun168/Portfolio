@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useRef } from "react";
 import Image from "next/image";
 import Container from "@/components/Container";
@@ -8,7 +8,6 @@ import Skill from "@/components/Skill";
 import Button from "@/components/Button";
 
 export default function Home() {
-
   const { sectionRefs } = useScroll();
 
   return (
@@ -22,7 +21,9 @@ export default function Home() {
             classname="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-5xl font-extrabold"
           ></TextAnimation>
           <a href="currentCV.pdf" download>
-            <Button classname="py-2 px-4 text-xl font-bold bg-violet-300 rounded-full mt-5">Download CV</Button>
+            <Button classname="py-2 px-4 text-xl font-bold bg-violet-300 rounded-full mt-5">
+              Download CV
+            </Button>
           </a>
         </div>
         <Image
@@ -33,7 +34,6 @@ export default function Home() {
         ></Image>
       </Container>
       <Container classname="pt-8">
-
         {/* About me */}
 
         <div className="w-full" ref={sectionRefs.aboutMeRef}>
@@ -42,21 +42,21 @@ export default function Home() {
           </h1>
           <div className="w-full h-[440px] border-t-4 border-violet-300 pt-5">
             <p className="first-line:pl-5">
-              Hello! I'm Chan Sarun, a third-year student majoring in Computer
-              Science at Royal University of Phnom Penh. I have a deep passion
-              for web development, with skills and interests in both frontend
-              and backend technologies.
+              Hello! I&apos;m Chan Sarun, a third-year student majoring in
+              Computer Science at Royal University of Phnom Penh. I have a deep
+              passion for web development, with skills and interests in both
+              frontend and backend technologies.
             </p>
             <p className="mt-5">
-              Throughout my studies, I've built a solid foundation in HTML, CSS,
-              and JavaScript for frontend development, as well as Node.js and
-              databases for backend development. I enjoy creating dynamic and
-              responsive web applications that provide excellent user
+              Throughout my studies, I&apos;ve built a solid foundation in HTML,
+              CSS, and JavaScript for frontend development, as well as Node.js
+              and databases for backend development. I enjoy creating dynamic
+              and responsive web applications that provide excellent user
               experiences and robust functionality.
             </p>
             <p className="mt-5">
-              In addition to my coursework, I've worked on several personal and
-              academic projects that have allowed me to apply my skills in
+              In addition to my coursework, I&apos;ve worked on several personal
+              and academic projects that have allowed me to apply my skills in
               real-world scenarios. These projects have helped me develop my
               problem-solving abilities and gain practical knowledge in both
               frontend and backend development.
@@ -68,12 +68,13 @@ export default function Home() {
               and improvement.
             </p>
             <p className="mt-5">
-              When I'm not coding, I enjoy exploring new technologies, reading
-              tech blogs, and spending time outdoors. I'm excited to connect
-              with industry professionals and learn from their experiences.
+              When I&apos;m not coding, I enjoy exploring new technologies,
+              reading tech blogs, and spending time outdoors. I&apos;m excited
+              to connect with industry professionals and learn from their
+              experiences.
             </p>
             <p className="mt-5">
-              Feel free to reach out if you'd like to connect or discuss
+              Feel free to reach out if you&apos;d like to connect or discuss
               potential opportunities!
             </p>
           </div>
@@ -86,7 +87,7 @@ export default function Home() {
             Skills
           </h1>
           <div className="w-full border-t-4 border-violet-300 pt-5">
-              <Skill></Skill>
+            <Skill></Skill>
           </div>
         </div>
       </Container>
