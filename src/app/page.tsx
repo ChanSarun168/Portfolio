@@ -1,113 +1,95 @@
+"use client"
+import React, { useRef } from "react";
 import Image from "next/image";
+import Container from "@/components/Container";
+import TextAnimation from "@/components/TextAnimation";
+import { useScroll } from "@/contexts/scrollContext";
+import Skill from "@/components/Skill";
+import Button from "@/components/Button";
 
 export default function Home() {
+
+  const { sectionRefs } = useScroll();
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+    <>
+      <div className="w-full flex justify-between items-center custom-clip-path bg-violet-300 absolute h-[670px] mt-20"></div>
+      <Container classname="flex justify-between relative items-center h-[670px] mb-20">
+        <div>
+          <h1 className="font-[1000] text-5xl mb-5">Hi I'm Sarun</h1>
+          <TextAnimation
+            text={["WEB DEVELOPER"]}
+            classname="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-5xl font-extrabold"
+          ></TextAnimation>
+          <a href="currentCV.pdf" download>
+            <Button classname="py-2 px-4 text-xl font-bold bg-violet-300 rounded-full mt-5">Download CV</Button>
           </a>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          src={"/profile.png"}
+          alt={"profile"}
+          width={400}
+          height={400}
+        ></Image>
+      </Container>
+      <Container classname="pt-8">
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        {/* About me */}
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        <div className="w-full" ref={sectionRefs.aboutMeRef}>
+          <h1 className="w-[15%] h-[60px] bg-violet-300 session-clip-path text-3xl font-bold flex items-center pl-2">
+            About Me
+          </h1>
+          <div className="w-full h-[440px] border-t-4 border-violet-300 pt-5">
+            <p className="first-line:pl-5">
+              Hello! I'm Chan Sarun, a third-year student majoring in Computer
+              Science at Royal University of Phnom Penh. I have a deep passion
+              for web development, with skills and interests in both frontend
+              and backend technologies.
+            </p>
+            <p className="mt-5">
+              Throughout my studies, I've built a solid foundation in HTML, CSS,
+              and JavaScript for frontend development, as well as Node.js and
+              databases for backend development. I enjoy creating dynamic and
+              responsive web applications that provide excellent user
+              experiences and robust functionality.
+            </p>
+            <p className="mt-5">
+              In addition to my coursework, I've worked on several personal and
+              academic projects that have allowed me to apply my skills in
+              real-world scenarios. These projects have helped me develop my
+              problem-solving abilities and gain practical knowledge in both
+              frontend and backend development.
+            </p>
+            <p className="mt-5">
+              I am actively seeking internship opportunities where I can
+              contribute my skills and grow as a developer. I am a quick
+              learner, a team player, and passionate about continuous learning
+              and improvement.
+            </p>
+            <p className="mt-5">
+              When I'm not coding, I enjoy exploring new technologies, reading
+              tech blogs, and spending time outdoors. I'm excited to connect
+              with industry professionals and learn from their experiences.
+            </p>
+            <p className="mt-5">
+              Feel free to reach out if you'd like to connect or discuss
+              potential opportunities!
+            </p>
+          </div>
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        {/* Skill */}
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <div className="w-full" ref={sectionRefs.skillRef}>
+          <h1 className="w-[15%] h-[60px] bg-violet-300 session-clip-path text-3xl font-bold flex items-center pl-2">
+            Skills
+          </h1>
+          <div className="w-full border-t-4 border-violet-300 pt-5">
+              <Skill></Skill>
+          </div>
+        </div>
+      </Container>
+    </>
   );
 }
