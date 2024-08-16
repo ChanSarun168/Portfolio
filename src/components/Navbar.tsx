@@ -15,7 +15,7 @@ const Navbar = () => {
             <ul className='flex justify-between items-center'>
                 <li className='cursor-pointer' onClick={() => scrollToSection('aboutMeRef')}>About Me</li>
                 <li className='cursor-pointer' onClick={() => scrollToSection('skillRef')}>Skill</li>
-                <li className='cursor-pointer'>Study</li>
+                <li className='cursor-pointer' onClick={() => scrollToSection('studyRef')}>Study</li>
                 <li className='cursor-pointer'>Experience</li>
                 <li className='bg-violet-300 py-2 px-3 rounded-full cursor-pointer'>Contact Me</li>
             </ul>

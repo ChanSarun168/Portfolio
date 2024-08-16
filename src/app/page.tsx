@@ -6,6 +6,8 @@ import TextAnimation from "@/components/TextAnimation";
 import { useScroll } from "@/contexts/scrollContext";
 import Skill from "@/components/Skill";
 import Button from "@/components/Button";
+import Study from "@/components/Study";
+
 
 export default function Home() {
   const { sectionRefs } = useScroll();
@@ -90,6 +92,18 @@ export default function Home() {
             <Skill></Skill>
           </div>
         </div>
+
+        {/* Study */}
+        <div className="w-full" ref={sectionRefs.studyRef}>
+          <h1 className="w-[15%] h-[60px] bg-violet-300 session-clip-path text-3xl font-bold flex items-center pl-2">
+            Study
+          </h1>
+          <div className="w-full border-t-4 border-violet-300 pt-5">
+            <Study></Study>
+          </div>
+        </div>
+        
+
       </Container>
     </>
   );

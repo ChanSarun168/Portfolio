@@ -150,13 +150,14 @@ const Skill = () => {
         repository. This approach simplifies dependency management and promotes
         consistency across projects.
       </div>
-      <div className="flex  mt-5 items-center gap-x-5">
+      <div className="flex  mt-5 items-center gap-x-5 mb-10">
         <h1 className="text-2xl font-[1000]">Additional Skill: </h1>
         <Image src={"/GitHub.png"} alt={"github"} width={90} height={90} ></Image>
         <Image src={"/swagger.jpg"} alt={"swagger"} width={90} height={90} ></Image>
         <Image src={"/atomicdesign.jpg"} alt={"Atomicdesign"} width={90} height={90} ></Image>
         <Image src={"/postman.jpg"} alt={"Postman"} width={90} height={90} ></Image>
         <Image src={"/trello.png"} alt={"Trello"} width={90} height={90} ></Image>
+        <Image src={"/figma.jpg"} alt={"Figma"} width={90} height={90} ></Image>
       </div>
     </div>
   );

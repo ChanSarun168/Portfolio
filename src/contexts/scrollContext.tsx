@@ -4,6 +4,7 @@ import React, { createContext, useContext, useRef, RefObject } from 'react';
 type SectionRefs = {
   aboutMeRef: RefObject<HTMLDivElement>;
   skillRef: RefObject<HTMLDivElement>;
+  studyRef: RefObject<HTMLDivElement>;
   contactUsRef: RefObject<HTMLDivElement>;
 };
 
@@ -18,6 +19,7 @@ export const ScrollProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   const sectionRefs: SectionRefs = {
     aboutMeRef: useRef<HTMLDivElement>(null),
     skillRef: useRef<HTMLDivElement>(null),
+    studyRef : useRef<HTMLDivElement>(null),
     contactUsRef: useRef<HTMLDivElement>(null),
   };
 

@@ -13,3 +13,38 @@ body{
 .session-clip-path{
     clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
 }
+
+.box{
+    position: relative;
+    background-color: #000000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box::after{
+    content: '';
+    position : absolute;
+    background: linear-gradient(to bottom, transparent, transparent , #ff0000 100%);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+}
+
+.box::before{
+    content: '';
+    position : absolute;
+    background: linear-gradient(to bottom, transparent, transparent , #00ccff 100%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
