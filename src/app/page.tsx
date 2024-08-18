@@ -43,10 +43,10 @@ export default function Home() {
         {/* About me */}
 
         <div className="w-full" ref={sectionRefs.aboutMeRef}>
-          <h1 className="w-[15%] h-[60px] bg-violet-300 session-clip-path text-3xl font-bold flex items-center pl-2">
+          <h1 className="xl:w-[15%] w-[30%] xl:h-[60px] h-[40px] bg-violet-300 session-clip-path xl:text-3xl text-xl font-bold flex items-center pl-2">
             About Me
           </h1>
-          <div className="w-full h-[440px] border-t-4 border-violet-300 pt-5">
+          <div className="w-full border-t-4 border-violet-300 pt-5 mb-5">
             <p className="first-line:pl-5">
               Hello! I&apos;m Chan Sarun a third-year student majoring in
               Computer Science at Royal University of Phnom Penh. I have a deep
