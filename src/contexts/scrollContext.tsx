@@ -5,6 +5,7 @@ type SectionRefs = {
   aboutMeRef: RefObject<HTMLDivElement>;
   skillRef: RefObject<HTMLDivElement>;
   studyRef: RefObject<HTMLDivElement>;
+  expRef:RefObject<HTMLDivElement>;
   contactUsRef: RefObject<HTMLDivElement>;
 };
 
@@ -20,6 +21,7 @@ export const ScrollProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     aboutMeRef: useRef<HTMLDivElement>(null),
     skillRef: useRef<HTMLDivElement>(null),
     studyRef : useRef<HTMLDivElement>(null),
+    expRef : useRef<HTMLDivElement>(null),
     contactUsRef: useRef<HTMLDivElement>(null),
   };
 

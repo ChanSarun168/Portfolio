@@ -7,7 +7,7 @@ interface IContainer{
 
 const Container:React.FC<IContainer> = ({classname,children}) => {
   return (
-    <div className={`w-full px-[140px] ${classname}`}>
+    <div className={`w-full xl:px-[140px]  px-4 ${classname}`}>
       {children}
     </div>
   )

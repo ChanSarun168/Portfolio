@@ -43,6 +43,18 @@ const Study = () => {
         },
       ],
     },
+    {
+      thumbnail: "/etec.png",
+      school: "Etec Center",
+      statement: "Complete Course C/C++ , Web design , PHP/Laravel",
+      timeline: "",
+      certificate: [
+        {
+          name: "Web Design",
+          certi: "/sabaicode.png",
+        },
+      ],
+    },
   ];
 
   return (

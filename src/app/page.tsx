@@ -7,6 +7,8 @@ import { useScroll } from "@/contexts/scrollContext";
 import Skill from "@/components/Skill";
 import Button from "@/components/Button";
 import Study from "@/components/Study";
+import Experience from "@/components/Experience";
+import ContactMe from "@/components/ContactMe";
 
 
 export default function Home() {
@@ -14,26 +16,28 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-full flex justify-between items-center custom-clip-path bg-violet-300 absolute h-[670px] mt-20"></div>
-      <Container classname="flex justify-between relative items-center h-[670px] mb-20">
+      <div className="w-full flex justify-between items-center custom-clip-path bg-violet-300 absolute xl:h-[670px] h-[250px] xl:mt-20 mt-14"></div>
+      <Container classname="flex justify-between relative items-center xl:h-[670px] h-[250px] mb-20 pt-14">
         <div>
-          <h1 className="font-[1000] text-5xl mb-5">Hi I'm Sarun</h1>
+          <h1 className="font-[1000] text-xl xl:text-5xl mb-5">Hi I'm Sarun</h1>
           <TextAnimation
             text={["WEB DEVELOPER"]}
-            classname="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-5xl font-extrabold"
+            classname="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-2xl xl:text-5xl font-extrabold"
           ></TextAnimation>
           <a href="Chansarun.pdf" download>
-            <Button classname="py-2 px-4 text-xl font-bold bg-violet-300 rounded-full mt-5">
+            <Button classname="py-2 px-4 text-xs xl:text-xl font-bold bg-violet-300 rounded-full mt-5">
               Download CV
             </Button>
           </a>
         </div>
-        <Image
+        {/* <Image
           src={"/profile.png"}
           alt={"profile"}
-          width={400}
-          height={400}
-        ></Image>
+          width={70}
+          height={70}
+          className="w-[400px]"
+        ></Image> */}
+        <img src="/profile.png" alt="" className="w-[150px] h-[150px] xl:w-[400px] xl:h-[400px]"/>
       </Container>
       <Container classname="pt-8">
         {/* About me */}
@@ -100,6 +104,26 @@ export default function Home() {
           </h1>
           <div className="w-full border-t-4 border-violet-300 pt-5">
             <Study></Study>
+          </div>
+        </div>
+
+        {/* Experience */}
+        <div className="w-full" ref={sectionRefs.expRef}>
+          <h1 className="w-[15%] h-[60px] bg-violet-300 session-clip-path text-3xl font-bold flex items-center pl-2">
+            Experience
+          </h1>
+          <div className="w-full border-t-4 border-violet-300 pt-5">
+            <Experience></Experience>
+          </div>
+        </div>
+
+        {/* Contact */}
+        <div className="w-full" ref={sectionRefs.contactUsRef}>
+          <h1 className="w-[15%] h-[60px] bg-violet-300 session-clip-path text-3xl font-bold flex items-center pl-2">
+            Contact
+          </h1>
+          <div className="w-full border-t-4 border-violet-300 pt-5">
+            <ContactMe></ContactMe>
           </div>
         </div>
         
