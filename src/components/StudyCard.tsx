@@ -39,7 +39,7 @@ const StudyCard: React.FC<StudyCardProps> = ({
       </div>
       {certificate && certificate.length > 0 && (
         <div className="absolute xl:top-0 xl:right-0 bottom-0 xl:p-4 py-4">
-          <h1 className="font-bold text-xl">Certificate :</h1>
+          <h1 className="font-bold xl:text-xl text-xs">Certificate :</h1>
         </div>
       )}
       <div className="absolute bottom-0 right-0 p-4 flex gap-x-3">
