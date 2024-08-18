@@ -43,7 +43,7 @@ export default function Home() {
         {/* About me */}
 
         <div className="w-full" ref={sectionRefs.aboutMeRef}>
-          <h1 className="xl:w-[15%] w-[30%] xl:h-[60px] h-[40px] bg-violet-300 session-clip-path xl:text-3xl text-xl font-bold flex items-center pl-2">
+          <h1 className="xl:w-[15%] w-[35%] xl:h-[60px] h-[40px] bg-violet-300 session-clip-path xl:text-3xl text-xl font-bold flex items-center pl-2">
             About Me
           </h1>
           <div className="w-full border-t-4 border-violet-300 pt-5 mb-5">
@@ -89,7 +89,7 @@ export default function Home() {
         {/* Skill */}
 
         <div className="w-full" ref={sectionRefs.skillRef}>
-          <h1 className="w-[15%] h-[60px] bg-violet-300 session-clip-path text-3xl font-bold flex items-center pl-2">
+        <h1 className="xl:w-[15%] w-[35%] xl:h-[60px] h-[40px] bg-violet-300 session-clip-path xl:text-3xl text-xl font-bold flex items-center pl-2">
             Skills
           </h1>
           <div className="w-full border-t-4 border-violet-300 pt-5">
@@ -99,8 +99,8 @@ export default function Home() {
 
         {/* Study */}
         <div className="w-full" ref={sectionRefs.studyRef}>
-          <h1 className="w-[15%] h-[60px] bg-violet-300 session-clip-path text-3xl font-bold flex items-center pl-2">
-            Study
+        <h1 className="xl:w-[15%] w-[35%] xl:h-[60px] h-[40px] bg-violet-300 session-clip-path xl:text-3xl text-xl font-bold flex items-center pl-2">
+           Study
           </h1>
           <div className="w-full border-t-4 border-violet-300 pt-5">
             <Study></Study>
@@ -109,7 +109,7 @@ export default function Home() {
 
         {/* Experience */}
         <div className="w-full" ref={sectionRefs.expRef}>
-          <h1 className="w-[15%] h-[60px] bg-violet-300 session-clip-path text-3xl font-bold flex items-center pl-2">
+        <h1 className="xl:w-[15%] w-[35%] xl:h-[60px] h-[40px] bg-violet-300 session-clip-path xl:text-3xl text-xl font-bold flex items-center pl-2">
             Experience
           </h1>
           <div className="w-full border-t-4 border-violet-300 pt-5">
@@ -119,7 +119,7 @@ export default function Home() {
 
         {/* Contact */}
         <div className="w-full" ref={sectionRefs.contactUsRef}>
-          <h1 className="w-[15%] h-[60px] bg-violet-300 session-clip-path text-3xl font-bold flex items-center pl-2">
+        <h1 className="xl:w-[15%] w-[35%] xl:h-[60px] h-[40px] bg-violet-300 session-clip-path xl:text-3xl text-xl font-bold flex items-center pl-2">
             Contact
           </h1>
           <div className="w-full border-t-4 border-violet-300 pt-5">
