@@ -26,7 +26,7 @@ const ContactMe = () => {
         <a href="https://github.com/ChanSarun168" target="_blank">
           <Image src={"/githubicon.jpg"} alt={"Github"} width={30} height={30} className="cursor-pointers xl:w-[50px]"></Image>
         </a>
-        <h1 className="text-xl xl:text-2xl">Email</h1>
+        <h1 className="text-xl xl:text-2xl">Github</h1>
       </div>
       <div className="font-black text-3xl flex items-center gap-5 mt-5">
           <Image src={"/phone.png"} alt={"PhoneNumber"} width={30} height={30} className="cursor-pointers xl:w-[50px]"></Image>
