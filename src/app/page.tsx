@@ -24,7 +24,7 @@ export default function Home() {
             text={["WEB DEVELOPER"]}
             classname="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-2xl xl:text-5xl font-extrabold"
           ></TextAnimation>
-          <a href="Chansarun.pdf" download>
+          <a href="Chan Sarun CV.pdf" download>
             <Button classname="py-2 px-4 text-xs xl:text-xl font-bold bg-violet-300 rounded-full mt-5">
               Download CV
             </Button>
