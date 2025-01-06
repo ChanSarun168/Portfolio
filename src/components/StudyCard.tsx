@@ -25,13 +25,14 @@ const StudyCard: React.FC<StudyCardProps> = ({
 }) => {
   return (
     <div className="w-full xl:h-[200px] h-[300px] xl:flex items-center px-3 gap-x-5 rounded-md border-[1.5px] relative mb-5">
-      <Image
+      {/* <Image
         src={thumbnail}
         alt={school}
         width={80}
         height={80}
         className="xl:w-[180px] rounded-full"
-      />
+      /> */}
+      <img src={thumbnail} alt={school} className="xl:w-[180px] rounded-full w-[80px]"/>
       <div className="h-full py-5 flex-1">
         <h1 className="font-black xl:text-4xl text-xl mb-5">{school}</h1>
         <h1 className="font-bold xl:text-xl text-xs mb-5">{statement}</h1>
