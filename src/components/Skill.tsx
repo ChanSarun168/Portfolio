@@ -9,11 +9,6 @@ const Skill = () => {
       rate: 80,
     },
     {
-      thumbnail: "/csharplogo.png",
-      title: "C#",
-      rate: 60,
-    },
-    {
       thumbnail: "/html.png",
       title: "HTML",
       rate: 90,
@@ -42,6 +37,11 @@ const Skill = () => {
       thumbnail: "/nextjs.png",
       title: "Next Js",
       rate: 80,
+    },
+    {
+      thumbnail: "/react.png",
+      title: "React Js",
+      rate: 70,
     },
     {
       thumbnail: "/expressjs.jpg",
@@ -139,13 +139,6 @@ const Skill = () => {
         <Image src={"/rabbitmq.jpg"} alt={"rabbitmq"} width={100} height={20} /> */}
         <img src="/docker.png" alt="" className="w-[50px] xl:w-[70px]"/>
         <img src="/rabbitmq.jpg" alt="" className="w-[80px] xl:w-[100px]"/>
-      </div>
-      <h1 className="xl:text-2xl text-xl font-[1000] mt-5">Monorepo Architecture: </h1>
-      <div className="pt-5">
-        Experience in managing and developing projects within a monorepo
-        structure, where multiple projects or services are stored in a single
-        repository. This approach simplifies dependency management and promotes
-        consistency across projects.
       </div>
       <h1 className="xl:text-2xl text-xl font-[1000] mt-5">Monorepo Architecture: </h1>
       <div className="pt-5">

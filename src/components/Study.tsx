@@ -11,12 +11,8 @@ const Study = () => {
       certificate: [
         {
           name: "Foundation",
-          certi: "/sabaicode.png",
-        },
-        {
-          name: "Bachelor",
-          certi: "/sabaicode.png",
-        },
+          certi: "/rupp_year1.jpg",
+        }
       ],
     },
     {
