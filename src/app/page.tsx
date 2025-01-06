@@ -48,7 +48,7 @@ export default function Home() {
           </h1>
           <div className="w-full border-t-4 border-violet-300 pt-5 mb-5">
             <p className="first-line:pl-5">
-              Hello! I&apos;m Chan Sarun a third-year student majoring in
+              Hello! I&apos;m Chan Sarun a Fourth-year student majoring in
               Computer Science at Royal University of Phnom Penh. I have a deep
               passion for web development with skills and interests in both
               frontend and backend technologies.
